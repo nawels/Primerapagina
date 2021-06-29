@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: bluea;
+    src: url(Imagen/bluea.ttf);
+}
+
+.textos{
+    font-family: bluea;
+}
+
+@font-face{
+    font-family: eva;
+    src: url(Imagen/eva.TTF);
+}
+
+nav a{
+    font-family: eva;}
+
+    .foto img{
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+        width: 200%;
+        height: auto;
+
+    }
+
+body{
+     background: url(../imagens/Blanco\ gris\ mármol\ fotografía\ telón\ de\ fondo\ boda\ novia\ ducha\ _\ Etsy.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+
+.foto{
+    width: 200px;
+    text-align: center;
+}
+
+.imagen{
+    width: 200%;
+
+    padding: 30%;
+}
+
+
+
+/*.contenedorimagenes{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}*/
+
+.imagen {
+    margin: 1em;
+    padding: 1em;
+    float: left;
+
+}
+
+/*.imagenimg{
+    display: flex;
+    justify-content: center;
+    
+}*/
+
+
+
+
+.Titulo{
+    color: darkmagenta;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*header*/
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #000000;
+background: -webkit-linear-gradient(to right, #43434386, #0000002c), url(../imagens/Portada.jpg);
+background: linear-gradient(to right, #43434386, #0000002c), url(../imagens/Portada.jpg);
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: cornsilk;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+
+.textos{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    font-size: 50px;
+    color: cornsilk;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: cornsilk;
+}
+
+/*Galeria*/
+
+.contenidoporfolio{
+    background: cornsilk;
+}
+
+.galeriaportafolio{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagenportafolio{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagenportafolio > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.iconogaleria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    /*transform: scale(0);*/
+    background: hsla(273,91%,27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconogaleria img{
+    width: 50px;
+}
+
+.imagenportafolio:hover .iconogaleria{
+    transform: scale(0);
+}
+
+.redessociales{
+    height: 200px;
+    padding: 30px;
+}
+
+.sociales{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+}
+
+.sociales li{
+    display: inline-block;
+}
+
+.sociales a{
+    padding: 10px;
+}
